@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home - MRJ Bot Lab Web</title>
+    <!--discord metadata-->
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:type" content="website">
+<meta property="og:url" content="https://www.mbl.*">
+<meta property="og:title" content="MRJ Bot Lab">
+<meta property="og:site_name" content="MRJ Bot Lab Web" />
+<meta property="og:description" content="**Developing for future....**\n`Making free bot for discord users! We have many popular addition and own addition for users. We also have place for discord developer`...">
+<meta property="og:image" content="./images/mbl-banner.png" />
+<meta property="og:image:url" content="
+./images/mbl-banner.png" />
+<meta property="og:color" content="#D8FFFF" />
+<!--web metadata-->
+<meta name="description" content="**Developing for future....**\n`Making free bot for discord users! We have many popular addition and own addition for users. We also have place for discord developer`...">
+<meta name="twitter:image" content="./images/mbl-banner.png" />
+<meta name="twitter:url" content="https://mbl.*" />
+<!--chrome firefox opera mobile header colour-->
+<meta name="theme-color" content="#2881B0">
+<!--window phone header colour-->
+<meta name="msapplication-navbutton-color" content="#2881B0">
+<!-- safari header colour -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<!-- favicon -->
+	<link rel="shortcut icon" href="./images/mbl-logo-light.png">
+	<link rel="apple-touch-icon" href="./images/mbl-logo-light.png">
+	<link rel="apple-touch-icon-precomposed" href="./images/mbl-logo-light.png">
+	
+	<!--google-site-verfication-->
+		<meta name="google-site-verification" content="google-site-verification-code-here">
+		
+	  <!--stylesheet font -->
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+		    <link
+      href="//db.onlinewebfonts.com/c/721c73bcd2e49f3a621991089838b503?family=Euclid+Circular+B+Medium"
+      rel="stylesheet"
+      type="text/css"
+    />
+		<!--vendor css -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+	  		 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+		        <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+		<!--main css -->
+		<link rel="stylesheet" href="./style.css">
+		<!--main script-->
+		<script src="_.js"></script>
+	</head>
+	<body>
+	      <section class="main">
+          <!-- Navbar -->
+      <nav
+        class="navbar"
+        style="
+          overflow: hidden;
+          position: fixed; /* Set the navbar to fixed position */
+          top: 0; /* Position the navbar at the top of the page */
+          width: 100%;
+          z-index: 100;
+          background: rgba(255, 255, 255, 0.35);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          backdrop-filter: blur(9px);
+          -webkit-backdrop-filter: blur(9px);
+          border: 1px solid rgba(255, 255, 255, 0.18);
+          height: 9%;
+        ">
+        <div class="container-fluid">
+          <!--nav text-->
+          <a
+            class="navbar-brand"
+            href="#"
+            style="
+              color: #226186;
+              display: flex;
+              align-items: center;
+              justify-content: ccenter;
+            "
+          >
+            <img
+              src="./images/mbl-logo-light.png"
+              alt="MRJ Bot Lab Logo"
+              width="50"
+              height="50"
+              class="d-inline-block align-text-top"
+            />
+            MRJ Bot Lab
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="d-flex nav-links">
+            <div class="d-flex justify-content-center">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./"
+                style="color: #226186"
+                >Home</a
+              >
+              <a class="nav-link" href="#price" style="color: #226186"
+                >Prices</a
+              >
+              <a class="nav-link" href="./how-to-order" style="color: #226186"
+                >Order Zone</a
+              >
+            </div>
+            <a href="./about-us" class="btn" type="button" style="color: #226186">
+              About Us
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#commands">Commands</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+              </nav>
+                    <!-- Hero entry 👌 -->
+      <div class="hero" style="height: 100vh; width: 100%">
+        <div
+          id="hero"
+          class="text-center"
+          style="position: relative; top: 50%; transform: translateY(-50%); text-shadow: 0px 0px 10px #2881B0; color:#2881B0;"
+        >
+<div class="mbl-banner">MRJ Bot Lab</div>
+          <p>
+            Developing for future!<br>
+            Making free bot for discord users! We provide many popular additions bot host for cheap price or free and many other stuff also like free domain order and gfx order. We also have place for discord developer. We do event like bot submition with great prize.
+          </p>
+        </div>
+      </div>
+      <!-- End Hero -->
+      <!-- Features -->
+      <div id="features" class="section-features">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-md-10 col-lg-8">
+              <div class="header-section">
+                <h2 class="title-features">AVAILABLE FOR ORDER</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="single-service">
+                <div class="part-1">
+                  <i class="fab fa-spotify"></i> <i class="fab fa-youtube"></i>
+                  <i class="fab fa-soundcloud"></i>
+                  <h3 class="title">Music Bots with Spotify, Sound Cloud, YouTube Support.</h3>
+                </div>
+                <div class="part-2">
+                  <p class="description">
+                    There 3 type of Music Bot like:<br>
+                      • YTDL Music with 25+ filters(non-lavalink) - 30+ Commands<br>
+                      • Java Music Bots (with  Lavalink) - 30+ Commands<br>
+                      • Lavalink Music Bot - 80+ Commands <br><br> <i class="description">**Lavalinks are also available for developer for fast and better experience</i>
+                  </p>
+                </div>
+              </div>
+            </div>
+                  
+            <div class="col-md-6 col-lg-4">
+              <div class="single-service">
+                <div class="part-1">
+                  <i class="fas fa-hammer"></i>
+                  <h3 class="title">Security & Moderation Bots</h3>
+                </div>
+                <div class="part-2">
+                  <p class="description">
+These 4 type of Mod & Security bots:<br>• Simple Mod & Security bot - 50+ Commands<br>• 1 Addition Bot - 90+ Commands<br>• 2 Addition Bot - 80+ Commands<br>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="single-service">
+                <div class="part-1">
+                  <i class="fas fa-sliders-h"></i>
+                  <h3 class="title">Server Settings</h3>
+                </div>
+                <div class="part-2">
+                  <p class="description">
+                    Control your song looping song or queue, You can even change
+                    server prefix and server dj role
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Features -->
+        <footer>
+      <!-- Footer -->
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="copyright-text">
+                <p class="copy">
+                  © 2022
+                  <a href="https://dsc.gg/mblxking"
+                    >MRJ Bot Lab × Kingdom™</a
+                  >. All rights reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+  
+          <!-- cookies -->
+                  <div class="wrapper">
+    <img src="https://media.discordapp.net/attachments/934648806937620510/959688131098050560/unknown.png?width=609&height=609" alt="cookie">
+    <div class="content">
+      <header>Cookie</header>
+      <p>This website use cookies to ensure you get the best experience on our website.</p>
+      <div class="buttons">
+        <button class="item">Okay</button>
+        <a href="#" class="item">Learn more</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    const cookieBox = document.querySelector(".wrapper"),
+    acceptBtn = cookieBox.querySelector("button");
+    acceptBtn.onclick = ()=>{
+      document.cookie = "CookieBy=Kingdom-Manager-Web; max-age="+60*60*24*30;
+      if(document.cookie){
+        cookieBox.classList.add("hide");
+      }else{
+        alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
+      }
+    }
+    let checkCookie = document.cookie.indexOf("CookieBy=Kingdom-Manager-Web");
+    checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
+  </script>
+        </div>
+      </div>
+      <!-- End Footer -->
+      </footer>
+</section>
+	</body>
+	<style>
+	@font-face {
+    font-family: "shakies";
+    src: url(./fonts/Shakies-Web-TT.ttf);
+}
+	 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'shakies';
+    font-size: 20px;
+}
+
+:root{
+    /* ===== Colors ===== */
+    --body-color: #D8FFFF;
+    --toggle-color: #DDD;
+    --text-color: #2881B0;
+    
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+body{
+    min-height: 100vh;
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+}
+::selection{
+    background-color: var(--text-color);
+    color: var(--body-color);
+}
+body.dark{
+    --body-color: #2881B0;
+    --toggle-color: #fff;
+    --text-color: #D8FFFF;
+}
+.mbl-banner{
+  font-size: 80px;
+  text-shadow: none;
+}
+   .footer p a:link, a:visited {
+  text-decoration: none;
+  display: inline-block;
+  text-shadow: 0 0 10px #226186, 0 0 40px rgb(0, 97, 207),0 0 80px #2881B0;
+  transition: 0.6s;
+  animation: bulblink 4s cubic-bezier(1, 0.53, 0.4, 0.9) infinite;
+   }
+     
+     {}
+@keyframes bulblink{
+    0%,
+  22%,
+  36%,
+  75% {
+    color:#2881B0;
+   text-shadow: 0 0 10px #2881B0, 0 0 40px rgb(0, 97, 207),0 0 80px #2881B0;
+  }
+  28%,
+  33% {
+    color: #2881B0;
+    text-shadow: 0 0 8px rgba(0, 68, 193, 0.4), 0 0 30px rgba(0, 97, 207, 0.4),0 0 40px rgba(0, 119, 255, 0.4);
+  }
+  82%,
+  97% {
+    color: #2881B0;
+    text-shadow: none;
+  }
+     
+      }
+
+/*cookie*/
+.wrapper{
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  max-width: 365px;
+  background: #fff;
+  padding: 25px 25px 30px 25px;
+  border-radius: 15px;
+  box-shadow: 1px 7px 14px -5px rgba(0,0,0,0.15);
+  text-align: center;
+}
+.wrapper.hide{
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+}
+
+.wrapper img{
+  max-width: 90px;
+}
+.content header{
+  font-size: 25px;
+  font-weight: 600;
+  color: #226186;
+}
+.content{
+  margin-top: 10px;
+}
+.content p{
+  color: #858585;
+  margin: 5px 0 20px 0;
+}
+.content .buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons button{
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  background: #226186;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.buttons button:hover{
+  transform: scale(0.97);
+}
+.buttons .item{
+  margin: 0 10px;
+}
+.buttons a{
+  color: #226186;
+  text-decoration: none;
+}
+      
+
+/* scroll bar */
+::-webkit-scrollbar{
+  width: 7px;
+  -webkit-appearance: none;
+  
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#D8FFFF, #226186);
+  border: 1px #1A1A1A solid;
+  border-radius: 30px;
+
+}
+::-webkit-scrollbar:horizontal {
+    height: 5px;
+    background: transparent;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+   background: transparent;
+}
+
+    #features {
+      margin-top: 100px;
+    }
+
+    .title-features {
+      color: white;
+      text-transform: uppercase;
+      text-shadow: 0px 0px 10px #2881B0;
+      font-weight: 700;
+    }
+
+    .section-features {
+      padding-top: 110px;
+      padding-bottom: 120px;
+      color: #2881B0;
+    }
+
+    .title {
+      background: #2881B0;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      text-decoration: none;
+    }
+
+    .section-features .header-section {
+      margin-bottom: 35px;
+    }
+
+    .section-features .header-section .title {
+      position: relative;
+      margin-bottom: 40px;
+      padding-bottom: 25px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .section-features .header-section .title:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 140px;
+      height: 1px;
+    }
+
+    .section-features .header-section .title:after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 45px;
+      height: 3px;
+      background-color: #2881B0;
+    }
+
+    .section-features .header-section .title span {
+      color: rgb(31,135,181);
+    }
+
+    .section-features .header-section .description {
+      color: #6f6f71;
+    }
+
+    .section-features .single-service {
+      margin-top: 40px;
+      background: rgba(255, 255, 255, 0.35);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(9px);
+      -webkit-backdrop-filter: blur(9px);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .section-features .single-service .part-1 {
+      padding: 40px 40px 25px;
+      border-bottom: 2px solid #2881B0;
+    }
+
+    .section-features .single-service .part-1 i {
+      margin-bottom: 25px;
+      font-size: 50px;
+      color: #2881B0;
+    }
+
+    .section-features .single-service .part-1 .title {
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      line-height: 1.8em;
+      color: #2881B0;
+    }
+
+    .section-features .single-service .part-2 {
+      padding: 30px 40px 40px;
+      text-shadow: 0px 0px 10px #2881B0;
+    }
+
+    .section-features .single-service .part-2 .description {
+      margin-bottom: 22px;
+      color: #2881B0;
+      font-size: 14px;
+      line-height: 1.8em;
+    }
+    .section-features .single-service .part-2 .description .ul-li{
+      margin-bottom: 22px;
+      color: #2881B0;
+      font-size: 14px;
+      line-height: 1.8em;
+    }
+
+    .section-features .single-service .part-2 a {
+      color: #fff;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .section-features .single-service .part-2 a i {
+      margin-right: 10px;
+      color: #f70037;
+    }
+
+
+    .footer {
+      padding: 32px 0;
+      position: absolute;
+      width: 101%;
+      background-color: aqua;
+      color: white;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.5);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(9px);
+      -webkit-backdrop-filter: blur(9px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .footer p.copy {
+      margin: 0;
+      line-height: 26px;
+      font-size: 15px;
+      color:black;
+    }
+
+    .footer p.copy a {
+      background: #2881B0;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      text-decoration: none;
+    }
+
+    .footer p a:hover {
+      color: black;
+  text-shadow:none;
+    }
+	</style>
+	<script>
+/*f12 disable*/
+	  $(document).keydown(function(event){
+    if(event.keyCode==123){
+        return false;
+    }
+    else if (event.ctrlKey && event.shiftKey && event.keyCode==73){        
+             return false;
+    }
+});
+
+$(document).on("contextmenu",function(e){ 
+   e.preventDefault();
+});
+/*right click disable*/
+	</script>
+	<script>
+	    const body = document.querySelector('body'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+	</script>
+</html>
