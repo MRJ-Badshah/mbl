@@ -6,7 +6,9 @@ const username = document.getElementById('username')
 const usertag = document.getElementById('usertag')
 const userID = document.getElementById('userID')
 const listBot = document.getElementById('listbot')
-const appeal = document.getElementById('appeal')
+const message = document.getElementById('message')
+const proof = document.getElementById('proof')
+const paidc = document.getElementById('paidc')
 
 function sendMessage() { // After submitting the form.
     var request = new XMLHttpRequest() // Creates a new XML Http Request
@@ -22,9 +24,10 @@ function sendMessage() { // After submitting the form.
         fields: [ // Fields of the embed
             { name: "User", value: `[${username.value}#${(usertag.value).toString()}](https://discord.com/users/${userID.value})`, inline: true },
             { name: "UserID", value: `${(userID.value).toString()}`, inline: true },
-            { name: "Bot choosen", value: `${listBot.value}` },
-            { name: "paid ?", value: `${appeal.value}` },
-           { name: "User Message", value: `${ticket.value}` }
+            { name: "Bot choosen", value: `${listBot.options[listBot.selectedIndex].text}` },
+            { name: "paid ?", value: `${paidc.options[paidc.selectedIndex].text}` },
+            { name: "proof", value: `${proof.value}` },
+           { name: "User Message", value: `${message.value}` }
         ]
     }
 
