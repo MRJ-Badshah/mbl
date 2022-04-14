@@ -49,9 +49,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <!--main css -->
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../style.css">
   <!--main script-->
-  <script src="./order-bot.js"></script>
+  <script src="index.js"></script>
 
 </head>
 <body>
@@ -59,7 +59,7 @@
     <header>
       <div class="image-text">
         <span class="image">
-          <img src="./images/mbl-logo-light.png" alt="logo">
+          <img src="../images/mbl-logo-light.png" alt="logo">
         </span>
 
         <div class="text logo-text">
@@ -81,14 +81,14 @@
 
         <ul class="menu-links">
           <li class="nav-link">
-            <a href="./">
+            <a href="../">
               <i class='bx bx-home-alt icon'></i>
               <span class="text nav-text">Home</span>
             </a>
           </li>
 
           <li class="nav-link">
-            <a href="./how-to-order">
+            <a href="../how-to-order">
               <i class='bx bx-bar-chart-alt-2 icon'></i>
               <span class="text nav-text">How To Order</span>
             </a>
@@ -102,14 +102,14 @@
           </li>
 
           <li class="nav-link">
-            <a href="./order-free-domain">
+            <a href="../order-free-domain">
               <i class='bx bx-pie-chart-alt icon'></i>
               <span class="text nav-text">Order Free Domain</span>
             </a>
           </li>
 
           <li class="nav-link">
-            <a href="./order-gfx">
+            <a href="../order-gfx">
               <i class='bx bx-heart icon'></i>
               <span class="text nav-text">Order GFX</span>
             </a>
@@ -174,9 +174,9 @@
            select:invalid { color: gray; }
          </style>
           <select required type="text" id="listbot"  placeholder="Select" class="form-control" aria-describedby="reasonInfo" list="bot">
-            <option value="" disabled selected hidden>Select a option...</option>
+            <option value="hidden" disabled selected hidden>Select a option...</option>
             <optgroup label="Music Bot">
-            <option value="">YTDL Music</option>
+            <option value="YTDLm">YTDL Music</option>
             </optgroup>
           </select>
           <div id="reasonInfo" class="form-text">
@@ -185,10 +185,10 @@
         </div>
         <div class="mb-3 w-50 text-start">
           <label for="appeal" class="form-label"> Paid or not paid?</label>
-          <select required type="text" id="appeal" class="form-control" aria-describedby="appealInfo">
+          <select required type="text" id="paidc" class="form-control" aria-describedby="appealInfo">
             <option value="" disabled selected hidden>Yes/No</option>
-            <option value="">Yes</option>
-            <option value="">No</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
           </select>
           <div id="appealInfo" class="form-text">
            Are You Paid To MBL Team?
@@ -203,7 +203,7 @@
         </div>
         <div class="mb-3 w-50 text-start">
           <label for="appeal" class="form-label">Any Message You want to give?</label>
-          <input required type="text" id="ticket" placeholder="Message" class="form-control" aria-describedby="appealInfo" list="bot">
+          <input required type="text" id="message" placeholder="Message" class="form-control" aria-describedby="appealInfo" list="bot">
           <div id="appealInfo" class="form-text">
             You can also give the name, prefix, avatar, status of bot!
           </div>
@@ -734,4 +734,49 @@
   }
 
 </style>
+<script >
+  const webhookURL = "https://discord.com/api/webhooks/961153693284196382/uRvkolnCzyazGp1WmJlL4diAw7r2eLWmha2EPDYEKsOLWOrct-dg5WQN5Qi_m2eEZNkT" // MANDATORY | Your Webhook URL Here
+const avatarURL = "" // OPTIONAL | The URL for the PFP of the webhook itself. Must be a link to a supported image format.
+
+// Getting the elements from the HTML page
+const username = document.getElementById('username')
+const usertag = document.getElementById('usertag')
+const userID = document.getElementById('userID')
+const listBot = document.getElementById('listbot')
+const message = document.getElementById('message')
+const proof = document.getElementById('proof')
+const paidc = document.getElementById('paidc')
+
+function sendMessage() { // After submitting the form.
+    var request = new XMLHttpRequest() // Creates a new XML Http Request
+    request.open("POST", webhookURL) // Opens a new HTTP Request to the webhook URL
+    request.setRequestHeader('Content-type', 'application/json') // Sets the request Type
+
+    var embed = { // Embed to send.
+        author: { name: `${username.value}#${usertag.value}` }, 
+        title: "New Order!", // Title of the embed 
+        timestamp: new Date(), // Footer Timestamp of the embed
+        color: 0xFF0000, // Color of the embed
+        footer: { text: `made by dsc.gg/mblxking | User ID: ${(userID.value).toString()}` }, // Footer of the embed
+        fields: [ // Fields of the embed
+            { name: "User", value: `[${username.value}#${(usertag.value).toString()}](https://discord.com/users/${userID.value})`, inline: true },
+            { name: "UserID", value: `${(userID.value).toString()}`, inline: true },
+            { name: "Bot choosen", value: `${listBot.options[listBot.selectedIndex].text}` },
+            { name: "paid ?", value: `${paidc.options[paidc.selectedIndex].text}` },
+            { name: "proof", value: `${proof.value}` },
+           { name: "User Message", value: `${message.value}` }
+        ]
+    }
+
+    var params = { // Parameters to send the request
+        username: `New order log!`, // Name of the webhook
+        avatar_url: avatarURL, // PFP URL of the webhook
+        embeds: [ embed ] // Embeds to send with the webhook
+    }
+
+    request.send(JSON.stringify(params)) // Sends the request 
+    alert('Order Sent! Make Ticket and enjoy With new bot') // Tells the user that the appeal has been sent.
+    console.log('Order sentSent!') // Logs that the order has been sent. (For Your server webhook)
+}
+</script>
 </html>
